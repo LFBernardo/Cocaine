@@ -6,7 +6,6 @@ cd /data/snort3
 apt-get update && apt-get install cmake g++ libhwloc-dev libluajit-5.1-dev libssl-dev libpcre3-dev pkg-config zlib1g-dev bison flex libpcap-dev libdumbnet-dev libhsm-bin -y
 
 #### Downloads ####
-wget http://www.tcpdump.org/release/libpcap-1.8.1.tar.gz
 git clone https://github.com/snort3/snort3.git
 wget https://snort.org/downloads/snortplus/daq-2.2.2.tar.gz
 git clone https://github.com/dugsong/libdnet.git
