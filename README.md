@@ -1,4 +1,4 @@
-# snort3-install
+# Cocaine - A snort3-install script (thanks for the name Mark) 
 This is an automated script for installing Snort3.0
 
 **Still very much a work in progress. Will remove this line when it's complete.**
