@@ -96,5 +96,7 @@ cd build
 make
 make install
 
+echo 'export PATH=$PATH:/opt/snort/bin' > ~/.profile
+. ~/.profile
 
 #Hypescan and safec not being detected by snort3 compile process. Will attempt to resolve later
