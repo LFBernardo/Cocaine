@@ -91,12 +91,12 @@ ldconfig
 cd /data/install/
 git clone git://github.com/snortadmin/snort3.git
 cd snort3
-./configure_cmake.sh --prefix=/opt/snort --enable-large-pcap --enable-shell
+./configure_cmake.sh --enable-large-pcap --enable-shell
 cd build
 make
 make install
 
-echo 'export PATH=$PATH:/opt/snort/bin' > ~/.profile
+echo 'export PATH=$PATH:/usr/local/snort/bin' > ~/.profile
 . ~/.profile
 
 #Hypescan and safec not being detected by snort3 compile process. Will attempt to resolve later
