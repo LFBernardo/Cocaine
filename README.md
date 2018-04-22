@@ -1,4 +1,4 @@
-# Cocaine - A snort3-install script for Ubuntu 16.04 LTS# 
+# Cocaine - A snort3-install script for Ubuntu 16.04 LTS
 This is an automated script for installing Snort3.0 from available documentation
 
 **Still very much a work in progress. Will remove this line when it's complete.**
