@@ -25,12 +25,14 @@ tar xvzf libsafec-10052013.tar.gz
 tar xvzf flatbuffers-master.tar.gz
 tar xvzf daq-2.2.2.tar.gz
 
-## Safec
+## Safec < This isn't currently working as there is a bug (http://seclists.org/snort/2018/q1/269) You can uncomment the following lines
+## or leave it in place as it doesn't interfere with anything. I will fix the script if needed once they have resolved the bug in the
+## snort compiler.
 ## safec for runtime bounds checks on certain legacy C-library calls (this is optional but recommended):
 cd /data/install/libsafec-10052013
 ./configure
-make -j3
-make install -j3
+make
+make install
 
 ## Ragel/boost/hyperscan/colm
 ## Snort3 will use Hyperscan for fast pattern matching. Hyperscan requires Ragel and the Boost headers:
@@ -79,14 +81,13 @@ ldconfig
 cd /data/install/
 git clone git://github.com/snortadmin/snort3.git
 cd /data/install/snort3
-./configure_cmake.sh --enable-large-pcap --enable-shell
+./configure_cmake.sh --prefix=/ --enable-safec --enable-large-pcap --enable-shell
 cd build
 make -j3
 make install -j3
 
-echo 'export PATH=$PATH:/usr/local/snort/bin' >> ~/.profile
-echo 'export LUA_PATH=/usr/local/snort/include/snort/lua/\?.lua\;\;' >> ~/.profile
-echo 'export SNORT_LUA_PATH=/usr/local/snort/etc/snort' >> ~/.profile
+echo 'export LUA_PATH=/usr/include/snort/lua/\?.lua\;\;' >> ~/.profile
+echo 'export SNORT_LUA_PATH=/etc/snort' >> ~/.profile
 . ~/.profile
 
 
