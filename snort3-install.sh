@@ -6,6 +6,7 @@
 #Apt based dependencies
 apt-get update && apt-get install -y asciidoc autoconf autotools-dev bison build-essential  cmake cpputest dblatex flex g++  libpcre3-dev libdumbnet-dev libhwloc-dev  libhsm-bin libluajit-5.1-dev  liblzma-dev libnetfilter-queue-dev libpcap-dev libssl-dev libsqlite3-dev uuid-dev libtool openssl pkg-config source-highlight w3m zlib1g-dev
 mkdir -p /data/install/
+cd /data/install/
 
 #Downloads
 wget http://www.colm.net/files/colm/colm-0.13.0.5.tar.gz
