@@ -12,6 +12,6 @@ This is an automated script for installing Snort3.0 from available documentation
 
 * https://www.snort.org/documents/snort-3-0-for-ubuntu-14-and-16
 
-Created by Noah Dietrich - Noah@SublimeRobots.com. Creators copyright effective. 
+  *Created by Noah Dietrich - Noah@SublimeRobots.com. Creators copyright effective. 
 
 
