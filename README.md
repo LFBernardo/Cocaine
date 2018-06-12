@@ -15,4 +15,3 @@ This is an automated script for installing Snort3.0 from available documentation
   * Created by Noah Dietrich - Noah@SublimeRobots.com. Creators copyright effective. 
 
 
-(thanks for the name Mark F)
